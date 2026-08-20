@@ -49,8 +49,8 @@ env/
 .env.local
 
 # Uploaded files (optional - keep to preserve uploads)
-# app/static/uploads/*
-# !app/static/uploads/.gitkeep
+app/static/uploads/*
+!app/static/uploads/.gitkeep
 
 # Logs
 *.log

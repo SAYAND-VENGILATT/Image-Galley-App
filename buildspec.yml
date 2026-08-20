@@ -1,0 +1,22 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo "Checking Python version..."
+      - python3 --version
+
+  pre_build:
+    commands:
+      - echo "Validating application source..."
+      - python3 -m py_compile run.py
+      - python3 -m compileall -q app
+
+  build:
+    commands:
+      - echo "Build validation completed successfully."
+
+artifacts:
+  files:
+    - '**/*'
+  discard-paths: no
