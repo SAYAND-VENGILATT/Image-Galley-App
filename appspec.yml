@@ -1,7 +1,7 @@
 version: 0.0
 os: linux
 
-file_exist_behavior: overwrite
+file_exists_behavior: OVERWRITE
 files:
   - source: /
     destination: /home/django-user/Image-Galley-App
